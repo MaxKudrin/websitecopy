@@ -92,6 +92,9 @@ body img {
   z-index: 20;
   background-color: var(--primary-bg-color);
   transition: background-color 0.5s, box-shadow 0.5s;
+  @media (max-width: 720px) {
+    align-items: center;
+  }
   * {
     font-family: InterMedium;
   }
@@ -100,6 +103,10 @@ body img {
     align-items: center;
     justify-content: space-between;
     padding: 24px 24px;
+    @media (max-width: 720px) {
+      padding-top: 17px;
+      padding-bottom: 0;
+    }
   }
   &__logo {
     position: relative;
@@ -112,6 +119,9 @@ body img {
     left: 36px;
     width: 180px;
     height: 20px;
+    @media (max-width: 1040px) {
+      display: none;
+    }
   }
   &__theme-settings {
     width: 40px;
@@ -129,22 +139,44 @@ body img {
     display: flex;
     padding-top: 98px;
     padding-bottom: 67px;
+    @media (max-width: 960px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
   &__img {
     width: 430px;
     transform: translateX(20px);
+    @media (max-width: 515px) {
+      img {
+        left: -65%;
+      }
+    }
+
+    @media (max-width: 720px) {
+      img {
+        left: -30%;
+      }
+    }
   }
 }
 .top-container {
   padding-bottom: 8px;
   background-color: var(--primary-bg-color);
   transition: background-color 0.5s;
+  @media (max-width: 960px) {
+    overflow: hidden;
+  }
 }
 .wrapper {
   max-width: 932px;
   margin: 0 auto;
   position: relative;
   transition: transform 1s;
+  @media (max-width: 960px) {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
 }
 .title {
   padding-top: 114px;
@@ -230,6 +262,9 @@ body img {
     backdrop-filter: blur(10px);
     background-color: var(--about-bg-color);
     transition: box-shadow 0.15s;
+    @media (max-width: 960px) {
+      right: calc(50vw - 135px);
+    }
     &::before {
       background: no-repeat center/contain
         url("/img/7ec23ea0e65303d8c97c01ad83e9080f.png");
@@ -343,6 +378,10 @@ body img {
     height: 216px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 720px) {
+      overflow-x: hidden;
+      
+    }
   }
   &__card {
     width: 208px;

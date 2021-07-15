@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --host=0.0.0.0",
     "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "dependencies": {
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "swiper": "^6.7.5"
   }
 }

@@ -1,5 +1,9 @@
 import lightButton from "./img/8ec1bb2628073f20382b238e319d5378.svg";
 import darkButton from "./img/b5a1d1887b576690d954ecd6a6adb569.svg";
+// import Swiper JS
+import Swiper from "swiper";
+// import Swiper styles
+import "swiper/swiper-bundle.css";
 
 // Cards Hover
 
